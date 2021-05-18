@@ -7,4 +7,4 @@ To install all dependencies.
 
 # `npm run start`
 
-To compile th project.
+To compile the project.
