@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:wght@300;400&display=swap');
+
+:root{
+    --clrPrimary: #1995ad;
+    --clrSecondary: #a1d6e2;
+    --clrDark: #bcbabe;
+    --clrLight: #f1f1f2;
+    --clrText: #333;
+    --mainFont: "Nunito";
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--clrLight);
+    font-family: var(--mainFont);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar{
+    background-color: var(--clrPrimary);
+    padding: 20px;
+    
+    ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        li{
+            padding: 20px;
+            a{
+                text-decoration: none;
+                color: var(--clrLight);
+                
+                font-size: 18px;
+                &.active{
+                    background-color: var(--clrLight);
+                    color: var(--clrPrimary);
+                }
+                &:hover{
+                    background-color: var(--clrLight);
+                    color: var(--clrPrimary);
+                }
+            }
+            
+        }
+    }
+}
+/* Conten */
+.content{
+    max-width: 900px;
+    background-color: var(--clrLight);
+    margin: 0 auto;
+    padding: 30px 10px;
+    font-size: 20px;
+    color: var(--clrText);
+    .loading{
+        text-align: center;
+        font-size: 3rem;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: var(--clrSecondary);
+    color: var(--clrText);
+
+    .copyright{
+        margin-bottom: 20px;
+        
+    }
+    .links{
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            a{
+                padding: 0 20px;
+                color: var(--clrText);
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+/* Timer Page */
+.timer{
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+    .countdown-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .countdown-el{
+            text-align: center;
+            span{
+                font-size: 1.3rem;
+            }
+        }
+        .big-text{
+            font-weight: bold;
+            font-size: 6rem;
+            line-height: 1;
+            margin: 0 2rem;
+        }
+    }
+}
+
+/* Quiz Page */
+.quiz{
+    .quiz-container{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 600px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px rgba(0,0,0,.2);
+        overflow: hidden;
+        .quiz-header{
+            
+            padding: 2rem;
+            h2{
+                margin: 0;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+                li{
+                    font-size: 1.2rem;
+                    margin: 1rem 0;
+                    label{
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        button {
+            background-color: var(--clrPrimary);
+            color: #fff;
+            display: block;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            padding: 1.3rem;
+            font-size: 1.1rem;
+            &:hover{
+                background-color: var(--clrSecondary);
+            }
+        }
+    }
+}
