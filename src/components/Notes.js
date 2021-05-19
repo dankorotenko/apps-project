@@ -30,7 +30,7 @@ const Notes = ({title}) => {
                     <button onClick={() => editHandler()}><FontAwesomeIcon icon={faEdit} /></button>
                     <button><FontAwesomeIcon icon={faTrash} /></button>
                 </div>
-                <div className="main hidden" dangerouslySetInnerHTML={{ __html: value }}></div>
+                <div className="main hidden" dangerouslySetInnerHTML={{ __html: marked(value) }}></div>
                 <textarea onInput={inputHandler}></textarea>
             </div>
         </div>

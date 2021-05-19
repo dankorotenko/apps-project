@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import Timer from './components/Timer';
 import Quiz from './components/Quiz';
 import Notes from './components/Notes';
+import Todo from './components/Todo';
+import PasswordGenerator from './components/PasswordGenerator';
 
 function App() {
   return (
@@ -27,6 +29,14 @@ function App() {
             <Route path="/notes">
               <Notes title="Notes" />
             </Route>
+            <Route path="/passgen">
+              <PasswordGenerator title="Password Generator" />
+            </Route>
+
+            <Route path="/todo">
+              <Todo title="ToDo" />
+            </Route>
+
           </Switch>
         </div>
         <Footer />
